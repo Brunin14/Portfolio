@@ -1,0 +1,283 @@
+html, body {
+    height: 100vh; 
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #a8a7a6, #e0e0e0);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 200vh;
+}
+
+/* Cabeçalho */
+#Header {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os links */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#tudin {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+#tudin:hover {
+    color: #f39c12;
+}
+
+/* Título Principal */
+#TituloPrin {
+    margin-top: 70%;
+    margin-right: 40%;
+    font-size: 50px;
+    font-weight: 700;
+    color: #2c3e50;
+    letter-spacing: 1px;
+    
+}
+
+/* Texto */
+#TextoPrin {
+    margin-bottom: 60px;
+    margin-right: 40%;
+    color: #34495e;
+    font-style: italic;
+    
+}
+
+/* Botão */
+#contate-me {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+#contate-me:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Efeito de aumento do botão */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem */
+.programando {
+    position: absolute;
+    bottom: 0;  
+    left: 60%;
+    transform: translatey(-21%);
+    max-width: 550px;
+    width: 100%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animação para a imagem */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+#TituloSeg{
+    margin-top: 200px;
+    
+}
+
+.especialidades{
+    color: #2c3e50;
+}
+
+.Front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoFront{
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.Front:hover{
+    transform: scale(1.15); /* Aumenta a div em 5% */
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: 5px 5px 7px rgb(66, 66, 66);
+    border-radius: 30px;
+}
+
+#spanFront{
+    font-weight: bold;
+    padding: 14px;
+    font-size: 25px;
+}
+
+.Back{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Back:hover{
+    transform: scale(1.15); /* Aumenta a div em 5% */
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: 5px 5px 7px rgb(66, 66, 66);
+    border-radius: 30px;
+}
+
+#spanBack{
+    font-weight: bold;
+    padding: 14px;
+    font-size: 25px;
+}
+
+.Banco{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Banco:hover{
+    transform: scale(1.15); /* Aumenta a div em 5% */
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: 5px 5px 7px rgb(66, 66, 66);
+    border-radius: 30px;
+}
+
+#spanBanco{
+    font-weight: bold;
+    padding: 14px;
+    font-size: 25px;
+}
+
+#imagem-principal{
+    transform: translate(100px, 230px); 
+    border-radius: 10px;
+}
+
+#Sobre{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.text1{
+    padding: 15px;
+    transform: translate(500px, -130px); 
+    text-align: left;
+
+}
+
+#Nome{
+    color: #2c3e50;
+}
+
+.aprensentação{
+    transform: translate(530px, -130px); 
+    text-align: left;
+}
+
+.Hyperlinks{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+#Github{
+    transform: translate(530px, -130px); 
+    border-radius: 100px;
+}
+
+#Github:hover {
+    transition: 0.5s;
+    width: 70px;
+    height: 70px;
+    box-shadow: 5px 5px 7px rgb(66, 66, 66);
+    
+    
+}
+
+#Github:hover + #teste{
+    transition: 1s;
+    opacity: 1;
+    position: absolute;
+}
+
+#teste{
+    opacity: 0;
+    transform: translate(533px, -50px); 
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.5s, box-shadow 0.5s;
+    position: relative;
+}
+
+.carousel-item img {
+    max-width: 50%; /* Reduz a largura da imagem */
+    height: auto;
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+.textodoCarousel{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.carousel-indicators{
+    position: absolute;
+    bottom: 55px;
+}
