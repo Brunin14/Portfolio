@@ -48,22 +48,72 @@ body {
 }
 
 /* Título Principal */
+#Inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Garantir que ocupe 100% da altura da tela */
+    padding: 20px;
+    text-align: center;
+    transform: translate(-400px, 650px);
+    margin-top: 700px;
+}
+
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 60px; /* Espaçamento entre o topo */
+    flex-direction: row; /* Garantir que os itens fiquem lado a lado */
+    transform: translate(-300px, -30px);
+    margin-top: 200px;
+}
+
 #TituloPrin {
-    margin-top: 740px;
     font-size: 50px;
     font-weight: 700;
     color: #2c3e50;
-    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: left;
+    transform: translate(590px, -150px);
+}
+
+#TextoPrin {
+    margin-bottom: 60px;
+    color: #34495e;
+    font-style: italic;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
     
 }
 
-/* Texto */
-#TextoPrin {
-    margin-bottom: 60px;
-    margin-right: 40%;
-    color: #34495e;
-    font-style: italic;
-    
+.programando {
+    max-width: 550px;
+    width: 700px;
+    height: 500px;
+    margin-top: 30px;
+    animation: fadeInUp 1s ease-in-out;
+    border-radius: 10px; /* Adicionando borda arredondada à imagem */
+    position: absolute;
+    left: 1350px;
+    bottom: -70px;
+}
+
+/* Animação para a imagem */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Botão */
@@ -88,16 +138,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Imagem */
-.programando {
-    position: absolute;
-    bottom: 0;  
-    left: 60%;
-    transform: translatey(-61%);
-    max-width: 550px;
-    width: 100%;
-    animation: fadeInUp 1s ease-in-out;
-}
+
 
 /* Animação para a imagem */
 @keyframes fadeInUp {
@@ -131,7 +172,7 @@ body {
 }
 
 #Especialidade{
-    margin-top: 500px;
+    margin-top: 540px;
 }
 
 .Front{
@@ -358,4 +399,8 @@ body {
 
 .contato-info a:hover {
     text-decoration: underline;
+}
+
+#Inicio{
+    padding: 40px;
 }
