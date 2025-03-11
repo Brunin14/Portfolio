@@ -49,8 +49,7 @@ body {
 
 /* Título Principal */
 #TituloPrin {
-    margin-top: 70%;
-    margin-right: 40%;
+    margin-top: 740px;
     font-size: 50px;
     font-weight: 700;
     color: #2c3e50;
@@ -94,7 +93,7 @@ body {
     position: absolute;
     bottom: 0;  
     left: 60%;
-    transform: translatey(-21%);
+    transform: translatey(-61%);
     max-width: 550px;
     width: 100%;
     animation: fadeInUp 1s ease-in-out;
@@ -121,11 +120,18 @@ body {
 
 #TituloSeg{
     margin-top: 200px;
-    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   
 }
 
 .especialidades{
     color: #2c3e50;
+}
+
+#Especialidade{
+    margin-top: 500px;
 }
 
 .Front{
@@ -280,4 +286,76 @@ body {
 .carousel-indicators{
     position: absolute;
     bottom: 55px;
+}
+
+.carrossel-container {
+    display: flex;
+    gap: 300px;
+}
+
+.carrossel-item {
+    position: relative;
+    width: 280px;
+    height: 500px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    transform: translate(330px, 40px); 
+    border-radius: 30px;
+}
+
+.carrossel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+.carrossel-item img:not(:first-child) {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carrossel-item:hover .carrossel-img {
+    opacity: 1;
+}
+
+.carrossel-item:hover img {
+    opacity: 0;
+}
+
+#cor{
+    color: #2c3e50;
+}
+
+#tituloPro{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#container-COn{
+    background-color: rgba(71, 179, 57, 0.322);
+}
+
+
+#Contato {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contato-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contato-info a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contato-info a:hover {
+    text-decoration: underline;
 }
